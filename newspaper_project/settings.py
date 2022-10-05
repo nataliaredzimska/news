@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # local
+    'articles.apps.ArticlesConfig',
     'pages.apps.PagesConfig',
     'users.apps.UsersConfig',
 
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Poland'
 
 USE_I18N = True
 
@@ -139,11 +140,11 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # TODO: needs some configuration because it doesn't work
 # email configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-# email user configuration
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# # email user configuration
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = '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'
+# EMAIL_PORT = 25
+# EMAIL_USE_TLS = True
